@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank App</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 50px;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input,
+      select,
+      button {
+        margin: 8px;
+        padding: 10px;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .output {
+        margin-top: 20px;
+        background: #222;
+        color: #0f0;
+        padding: 15px;
+        border-radius: 5px;
+        min-height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank App</h1>
+
+      <h3>Account: Octane</h3>
+
+      <input type="number" id="amount" placeholder="Enter amount" />
+
+      <select id="recipient">
+        <option value="Sherrgs">Sherrgs</option>
+        <option value="Umarsk">Umarsk</option>
+      </select>
+
+      <div>
+        <button id="deposit">Deposit</button>
+        <button id="withdraw">Withdraw</button>
+        <button id="check">Check Balance</button>
+        <button id="transfer">Transfer</button>
+      </div>
+
+      <div class="output" id="output">Output will appear here...</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
